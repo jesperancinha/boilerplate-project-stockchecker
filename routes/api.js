@@ -44,6 +44,10 @@ module.exports = function (app) {
           });
           if(data.length === 1){
             res.json({stockData: data[0]});
+          } else if(data.length === 2){
+            data[0].rel_likes = data[1].likes - data[0].likes;
+            data[1].rel_likes = data[0].likes - data[1].likes;
+            res.json({stockData: [...data]})
           } else {
             res.json({stockData: [...data]})
           }

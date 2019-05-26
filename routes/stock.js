@@ -8,7 +8,8 @@ const StockSchema = new Schema({
   price: Number,
   likes: { type: Number, get: v => Math.round(v), set: v => Math.round(v)},
   like: Boolean,
-  ips: Array
+  rel_likes: Number,
+  ips: Array,
 })
 const Stock = mongoose.model('Stock', StockSchema);
 

@@ -102,9 +102,11 @@ suite('Functional Tests', function() {
            assert.equal(res.body.stockData[0].stock, 'GOOG');
            assert.approximately(res.body.stockData[0].price, 786.9, 0.1);
            assert.equal(res.body.stockData[0].likes, 1);
+           assert.equal(res.body.stockData[0].rel_likes, 0);
            assert.equal(res.body.stockData[1].stock, 'MSFT');
            assert.approximately(res.body.stockData[1].price, 62.3, 0.1);
            assert.equal(res.body.stockData[1].likes, 1);
+           assert.equal(res.body.stockData[1].rel_likes, 0);
            done();
          });
       });

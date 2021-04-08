@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "chai": "^4.2.0",
+    "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "helmet": "^3.18.0",
-    "mocha": "^8.2.0",
-    "mongodb": "^3.2.6",
+    "helmet": "^3.23.3",
+    "mocha": "^8.3.2",
+    "mongodb": "^3.6.5",
     "mongoose": "^5.12.3",
     "zombie": "^6.1.4",
     "snyk": "^1.518.0"

@@ -1,0 +1,16 @@
+name: Build on PR
+
+on:
+  pull_request:
+    branches: [ gomix ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      - name: Install Jest
+        run: yarn && yarn add jest --dev
